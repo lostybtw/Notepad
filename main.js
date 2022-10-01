@@ -55,21 +55,32 @@ document.addEventListener("DOMContentLoaded", function(){
 
     bold.addEventListener("click", function(){
         textArea.style.fontWeight = 'bold';
+		bold.style.background-color = 'darkblue'
     });
     underline.addEventListener("click", function(){
         textArea.style.textDecoration = 'underline';
+		underline.style.background-color = 'darkblue'
+
     });
     emphasized.addEventListener("click", function(){
         textArea.style.fontStyle = 'italic';
+		emphasized.style.background-color = 'darkblue'
+
     });
     plain.addEventListener("click", function(){
         textArea.style.fontWeight = '';
+		plain.style.background-color = 'darkblue'
+
     });
     normal.addEventListener("click", function(){
         textArea.style.textDecoration = '';
+		normal.style.background-color = 'darkblue'
+
     });
     unemphasized.addEventListener("click", function(){
         textArea.style.fontStyle = '';
+		unemphasized.style.background-color = 'darkblue'
+
     });
 
     $(document).on('click', '#files li', function(e){
